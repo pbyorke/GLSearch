@@ -35,6 +35,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C17EB37E1C16292B00F87645 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C1C967D31C1627FC001539A9 /* LaunchScreen.storyboard */,
+				C1C967D11C1627FC001539A9 /* Assets.xcassets */,
+				C1C967D61C1627FC001539A9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		C1C967BE1C1627FC001539A9 = {
 			isa = PBXGroup;
 			children = (
@@ -57,9 +67,7 @@
 				C1C967CA1C1627FC001539A9 /* AppDelegate.swift */,
 				C1C967CC1C1627FC001539A9 /* ViewController.swift */,
 				C1C967CE1C1627FC001539A9 /* Main.storyboard */,
-				C1C967D11C1627FC001539A9 /* Assets.xcassets */,
-				C1C967D31C1627FC001539A9 /* LaunchScreen.storyboard */,
-				C1C967D61C1627FC001539A9 /* Info.plist */,
+				C17EB37E1C16292B00F87645 /* Supporting Files */,
 			);
 			path = GLSearch;
 			sourceTree = "<group>";
@@ -286,6 +294,7 @@
 				C1C967DB1C1627FC001539A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
