@@ -74,8 +74,8 @@ class CatalogMenu: UITableViewController {
 
     /*
      * cellForRowAtIndexPath()
-     * if the desired row is within the range of the count of folders, use a FolderContent prototype,
-     * get the name from the appropriate folder in the folders array, and use a different color.
+     * if the desired row is within the range of the count of folders, use a FolderContent prototype
+     * and get the name from the appropriate folder in the folders array.
      * if the desired row is greater than the range of the count of folders, use a BookContent prototype
      * and get the name from the appropriate book in the books array.
      * different prototypes are used so that separate segues can be attached to each
@@ -86,12 +86,10 @@ class CatalogMenu: UITableViewController {
             let cell = tableView.dequeueReusableCellWithIdentifier("BookContent", forIndexPath: indexPath)
             row -= catalog.folders.count
             cell.textLabel!.text = catalog.books[row].name
-            cell.textLabel!.textColor = UIColor.blackColor()
             return cell
         } else { // Folders
             let cell = tableView.dequeueReusableCellWithIdentifier("FolderContent", forIndexPath: indexPath)
             cell.textLabel!.text = catalog.folders[row].name
-            cell.textLabel!.textColor = UIColor.brownColor()
             return cell
         }
     }
@@ -119,6 +117,7 @@ class CatalogMenu: UITableViewController {
             }
         case "BookSegue":
             row -= catalog.folders.count
+            /* at this point we would prepare the Contents instance, but we're not doing contents right now */
         default: break;
         }
     }
