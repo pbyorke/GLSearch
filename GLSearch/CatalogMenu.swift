@@ -15,11 +15,12 @@ class CatalogMenu: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         Model().getCatalogForLanguage(language) {
             cat in
             self.catalog = cat
-            self.title = cat.name
             dispatch_async(dispatch_get_main_queue(), {
+                self.title = cat.name
                 self.tableView.reloadData()
             })
             
