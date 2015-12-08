@@ -8,6 +8,13 @@
 
 import UIKit
 
+/*
+ *
+ * class LanguageMenu
+ *
+ * handle the UITableViewController that lists all the languages returned by the API
+ *
+ */
 class LanguageMenu: UITableViewController {
     
     var languages = [Language]() // array of languages available through the API

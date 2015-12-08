@@ -57,13 +57,6 @@ class Model {
      * getCatalogForLanguage()
      * get the catalog entry from the API
      */
-    
-    
-    
-//    http://tech.lds.org/glweb?action=catalog.query&languageid=7&platformid=1&format=json
-    
-    
-    
     func getCatalogForLanguage(lang: Int, handler: (Catalog)->Void) {
         let delegate = UIApplication.sharedApplication().delegate as! AppDelegate
         getJSON("http://tech.lds.org/glweb?action=catalog.query&languageid=\(lang)&platformid=\(delegate.platform)&format=json") {
