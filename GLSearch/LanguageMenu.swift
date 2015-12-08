@@ -60,7 +60,7 @@ class LanguageMenu: UITableViewController {
      */
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Language", forIndexPath: indexPath)
-        cell.textLabel!.text = languages[indexPath.row].engName
+        cell.textLabel!.text = languages[indexPath.row].name
         return cell
     }
 
@@ -71,6 +71,9 @@ class LanguageMenu: UITableViewController {
      * prepare the upcoming table view controller based on the selected row
      */
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let controller = segue.destinationViewController as? CatalogMenu {
+            controller.language = languages[self.tableView.indexPathForSelectedRow!.row].id
+        }
     }
 
 }

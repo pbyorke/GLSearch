@@ -1,5 +1,5 @@
 //
-//  Language.swift
+//  Platform.swift
 //  GLSearch
 //
 //  Created by Peter Yorke on 12/7/15.
@@ -8,20 +8,20 @@
 
 import Foundation
 
-class Language {
+class Platform {
     
-    var id = 0
+    var id = 0 // id to use in other API calls
     var name = "" // English name for this language
     
     /*
-     * init()
-     * initialize using an NSDictionary from the API
-     */
+    * init()
+    * initialize using an NSDictionary from the API
+    */
     init(_ dict: NSDictionary) {
         if let value = dict["id"] {
             id = value as! Int
         }
-        if let value = dict["eng_name"] {
+        if let value = dict["name"] {
             name = value as! String
         }
     }
