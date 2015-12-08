@@ -10,4 +10,16 @@ import Foundation
 
 class Language {
     
+    var engName = "" // English name for this language
+    
+    /*
+     * init()
+     * initialize using an NSDictionary from the API
+     */
+    init(_ dict: NSDictionary) {
+        if let value = dict.objectForKey("eng_name") {
+            engName = value as! String
+        }
+    }
+    
 }
