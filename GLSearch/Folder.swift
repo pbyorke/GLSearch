@@ -14,4 +14,22 @@ class Folder {
     var folders = [Folder]()
     var books = [Book]()
     
+    init(_ dict: NSDictionary) {
+        if let value = dict["name"] {
+            name = value as! String
+        }
+        if let value = dict["books"] {
+            let array = value as? NSArray
+            for entry in array! {
+                books.append(Book(entry as! NSDictionary))
+            }
+        }
+        if let value = dict["folders"] {
+            let array = value as? NSArray
+            for entry in array! {
+                folders.append(Folder(entry as! NSDictionary))
+            }
+        }
+    }
+    
 }

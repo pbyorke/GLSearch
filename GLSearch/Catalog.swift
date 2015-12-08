@@ -20,6 +20,18 @@ class Catalog {
         if let value = dict["name"] {
             name = value as! String
         }
+        if let value = dict["books"] {
+            let array = value as? NSArray
+            for entry in array! {
+                books.append(Book(entry as! NSDictionary))
+            }
+        }
+        if let value = dict["folders"] {
+            let array = value as? NSArray
+            for entry in array! {
+                folders.append(Folder(entry as! NSDictionary))
+            }
+        }
     }
     
 }
