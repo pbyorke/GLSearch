@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="IVr-PJ-hnG">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9019"/>
+    </dependencies>
+    <scenes>
+        <!--ShowWords-->
+        <scene sceneID="tcF-Cz-kVF">
+            <objects>
+                <controller identifier="ShowWords" id="IVr-PJ-hnG" customClass="WordsInterfaceController" customModule="GLSearchFast_Extension">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="mAE-7L-7Ji">
+                            <items>
+                                <group width="1" alignment="left" id="pK1-9A-8dA">
+                                    <items>
+                                        <button height="20" alignment="left" title="100" id="gcE-dg-wYA">
+                                            <connections>
+                                                <action selector="oneHundred" destination="IVr-PJ-hnG" id="6Q5-7P-tbf"/>
+                                            </connections>
+                                        </button>
+                                        <button height="20" alignment="left" title="200" id="eQF-8Y-xvJ">
+                                            <connections>
+                                                <action selector="twoHundred" destination="IVr-PJ-hnG" id="5cB-Mx-nNT"/>
+                                            </connections>
+                                        </button>
+                                        <button height="20" alignment="left" title="300" id="cin-FU-tIF">
+                                            <connections>
+                                                <action selector="threeHundred" destination="IVr-PJ-hnG" id="AkS-9J-PN7"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" id="fhE-DB-bmu">
+                                    <items>
+                                        <button height="20" alignment="left" title="400" id="Tza-z7-9HQ">
+                                            <connections>
+                                                <action selector="fourHundred" destination="IVr-PJ-hnG" id="GYv-FZ-xfs"/>
+                                            </connections>
+                                        </button>
+                                        <button height="20" alignment="left" title="500" id="ne6-yS-Leu">
+                                            <connections>
+                                                <action selector="fiveHundred" destination="IVr-PJ-hnG" id="reS-a1-kmY"/>
+                                            </connections>
+                                        </button>
+                                        <button height="20" alignment="left" title="600" id="w6Q-ak-vVV">
+                                            <connections>
+                                                <action selector="sixHundred" destination="IVr-PJ-hnG" id="790-1O-UXc"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" verticalAlignment="center" layout="vertical" id="lD0-SY-BIl">
+                            <items>
+                                <label width="1" height="30" alignment="left" textAlignment="center" id="cVe-28-2CO">
+                                    <fontDescription key="font" type="system" weight="semibold" pointSize="30"/>
+                                </label>
+                                <label width="1" height="20" alignment="left" text="100 WPM" textAlignment="center" id="MkX-Ji-EUP"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" verticalAlignment="bottom" id="dTJ-fS-oFP">
+                            <items>
+                                <button height="30" alignment="left" title="Start" id="PVM-dU-iZP">
+                                    <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="18"/>
+                                    <connections>
+                                        <action selector="doStart" destination="IVr-PJ-hnG" id="zb3-yg-0QB"/>
+                                    </connections>
+                                </button>
+                                <button height="30" alignment="right" title="Stop" id="X2C-qa-kxr">
+                                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="18"/>
+                                    <connections>
+                                        <action selector="doStop" destination="IVr-PJ-hnG" id="Eeu-Ex-sPP"/>
+                                    </connections>
+                                </button>
+                            </items>
+                            <edgeInsets key="margins" left="2" right="2" top="0.0" bottom="3"/>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="word" destination="cVe-28-2CO" id="7KU-Xt-dzN"/>
+                        <outlet property="wpm" destination="MkX-Ji-EUP" id="bSL-EP-Sry"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="203" y="343"/>
+        </scene>
+    </scenes>
+</document>
