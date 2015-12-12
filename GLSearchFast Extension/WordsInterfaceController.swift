@@ -42,27 +42,8 @@ class WordsInterfaceController: WKInterfaceController {
         doStart()
     }
     
-    @IBAction func oneHundred() {
-        newInterval(100.0)
+    @IBAction func doSlide(value: Float) {
+        newInterval(Double(value))
     }
     
-    @IBAction func twoHundred() {
-        newInterval(200.0)
-    }
-    
-    @IBAction func threeHundred() {
-        newInterval(300.0)
-    }
-    
-    @IBAction func fourHundred() {
-        newInterval(400.0)
-    }
-    
-    @IBAction func fiveHundred() {
-        newInterval(500.0)
-    }
-    
-    @IBAction func sixHundred() {
-        newInterval(600.0)
-    }
 }
