@@ -12,13 +12,13 @@
                     <items>
                         <group width="1" alignment="left" verticalAlignment="center" layout="vertical" id="lD0-SY-BIl">
                             <items>
-                                <label width="1" height="30" alignment="left" text="Word" textAlignment="center" id="cVe-28-2CO">
+                                <label width="1" height="40" alignment="left" textAlignment="center" id="cVe-28-2CO">
                                     <fontDescription key="font" type="system" weight="semibold" pointSize="30"/>
                                 </label>
                                 <label width="1" height="20" alignment="left" text="100 WPM" textAlignment="center" id="MkX-Ji-EUP"/>
-                                <slider height="20" alignment="left" continuous="YES" value="100" minimum="100" maximum="600" steps="10" id="QKb-RN-nAq">
+                                <slider height="40" alignment="left" continuous="YES" value="100" minimum="100" maximum="600" steps="10" id="QKb-RN-nAq">
                                     <connections>
-                                        <action selector="doSlide:" destination="IVr-PJ-hnG" id="wOX-rj-z9r"/>
+                                        <action selector="newInterval:" destination="IVr-PJ-hnG" id="i8d-0n-DLe"/>
                                     </connections>
                                 </slider>
                             </items>
