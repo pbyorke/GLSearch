@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="IVr-PJ-hnG">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="IVr-PJ-hnG">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9019"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
     </dependencies>
     <scenes>
         <!--ShowWords-->
@@ -10,54 +10,17 @@
             <objects>
                 <controller identifier="ShowWords" id="IVr-PJ-hnG" customClass="WordsInterfaceController" customModule="GLSearchFast_Extension">
                     <items>
-                        <group width="1" alignment="left" layout="vertical" id="mAE-7L-7Ji">
-                            <items>
-                                <group width="1" alignment="left" id="pK1-9A-8dA">
-                                    <items>
-                                        <button height="20" alignment="left" title="100" id="gcE-dg-wYA">
-                                            <connections>
-                                                <action selector="oneHundred" destination="IVr-PJ-hnG" id="6Q5-7P-tbf"/>
-                                            </connections>
-                                        </button>
-                                        <button height="20" alignment="left" title="200" id="eQF-8Y-xvJ">
-                                            <connections>
-                                                <action selector="twoHundred" destination="IVr-PJ-hnG" id="5cB-Mx-nNT"/>
-                                            </connections>
-                                        </button>
-                                        <button height="20" alignment="left" title="300" id="cin-FU-tIF">
-                                            <connections>
-                                                <action selector="threeHundred" destination="IVr-PJ-hnG" id="AkS-9J-PN7"/>
-                                            </connections>
-                                        </button>
-                                    </items>
-                                </group>
-                                <group width="1" alignment="left" id="fhE-DB-bmu">
-                                    <items>
-                                        <button height="20" alignment="left" title="400" id="Tza-z7-9HQ">
-                                            <connections>
-                                                <action selector="fourHundred" destination="IVr-PJ-hnG" id="GYv-FZ-xfs"/>
-                                            </connections>
-                                        </button>
-                                        <button height="20" alignment="left" title="500" id="ne6-yS-Leu">
-                                            <connections>
-                                                <action selector="fiveHundred" destination="IVr-PJ-hnG" id="reS-a1-kmY"/>
-                                            </connections>
-                                        </button>
-                                        <button height="20" alignment="left" title="600" id="w6Q-ak-vVV">
-                                            <connections>
-                                                <action selector="sixHundred" destination="IVr-PJ-hnG" id="790-1O-UXc"/>
-                                            </connections>
-                                        </button>
-                                    </items>
-                                </group>
-                            </items>
-                        </group>
                         <group width="1" alignment="left" verticalAlignment="center" layout="vertical" id="lD0-SY-BIl">
                             <items>
-                                <label width="1" height="30" alignment="left" textAlignment="center" id="cVe-28-2CO">
+                                <label width="1" height="40" alignment="left" textAlignment="center" id="cVe-28-2CO">
                                     <fontDescription key="font" type="system" weight="semibold" pointSize="30"/>
                                 </label>
                                 <label width="1" height="20" alignment="left" text="100 WPM" textAlignment="center" id="MkX-Ji-EUP"/>
+                                <slider height="40" alignment="left" continuous="YES" value="100" minimum="100" maximum="600" steps="10" id="QKb-RN-nAq">
+                                    <connections>
+                                        <action selector="newInterval:" destination="IVr-PJ-hnG" id="i8d-0n-DLe"/>
+                                    </connections>
+                                </slider>
                             </items>
                         </group>
                         <group width="1" alignment="left" verticalAlignment="bottom" id="dTJ-fS-oFP">

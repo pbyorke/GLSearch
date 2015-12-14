@@ -8,6 +8,13 @@
 
 import Foundation
 
+/*
+ *
+ * class Words
+ *
+ * Temporary repository of words that can be displayed
+ *
+ */
 class Words {
     let words = [
             "When","in","the","course","of","human","events","it","becomes","necessary",
@@ -20,6 +27,10 @@ class Words {
         ]
     var index = -1
     
+    /*
+     * next()
+     * return the next word in the array, or if at the end go back to the beginning
+     */
     func next() -> String {
         if ++index >= words.count {
             index = 0
